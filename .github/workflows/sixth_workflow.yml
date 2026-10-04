@@ -4,7 +4,6 @@ on:
     branches:
       - main
       - "page/*"
-      - "page/**"
       - "!page/blog"
     #tags: ["v1.*", "!v1.2.1"]
     paths:
