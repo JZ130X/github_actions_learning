@@ -1,7 +1,7 @@
 name: Sixth Workflow
 on:
   push:
-    branches: [main, page/*, paths/**, "!page/blog"]
+    branches: [main, page/*, page/**, "!page/blog"]
     #tags: ["v1.*", "!v1.2.1"]
     paths: ["**.html"]
 jobs:
