@@ -12,7 +12,7 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Events variables
+      - name: Events variable
         run: |
           echo ${GITHUB_SHA}
           echo ${GITHUB_REF}
