@@ -5,9 +5,8 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Display some text
-        run: echo "Hello, World!"
-      - name: Commands in Multiple Lines
-        run: |
-          pwd
-          ls -a
+      - name: List files and Copy Repo
+        run: ls -a
+      - uses: actions/checkout@v4
+      - name: list files after checkout
+        run: ls -a
