@@ -7,6 +7,20 @@ on:
         type: string
         required: true
         default: "Default title"
+      selectCustom:
+        description: "Select an option"
+        type: choice
+        required: true
+        default: "Option 1"
+        options:
+          - Option 1
+          - Option 2
+          - Option 3
+      checkCustom:
+        description: "Check this box"
+        type: boolean
+        required: false
+        default: false
 
 jobs:
   run-first-command:
@@ -15,3 +29,5 @@ jobs:
       - name: Cron
         run: |
           echo "Title: ${{ inputs.titleCustom }}"
+          echo "Title: ${{ inputs.selectCustom }}"
+          echo "Title: ${{ inputs.checkCustom }}"
